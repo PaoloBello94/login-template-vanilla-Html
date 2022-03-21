@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: linear-gradient(90deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255)) ;
+  font-family:"Comic Sans MS",serif;
+}
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.sub-login {
+    background:linear-gradient(90deg, black , #28d, black);
+  padding: 20px;
+  color: #fff; 
+}
+/* The triangle form is achieved by a CSS hack */
+
+
+.login-header {
+  background:linear-gradient(90deg, black , #28d, black);
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+  margin-top: 0px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background:linear-gradient(90deg, black , #28d, black) ;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  animation-name: background-color;
+  animation-duration: 0,1s;
+  animation-fill-mode: forwards;
+}
+  @keyframes background-color {
+    100% {
+      background:linear-gradient(90deg, #28d , black, #28d);
+    }
+/* Buttons' focus effect */
+
+}
