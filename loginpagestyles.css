@@ -9,12 +9,12 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background: linear-gradient(90deg, #FFFFFF, #6282F9, #0f3b84);
+  background: linear-gradient(270deg, #FFFFFF, #6282F9, #0f3b84);
 }
 
 #main-holder {
   width: 50%;
-  height: 70%;
+  height: 50%;
   display: grid;
   justify-items: center;
   align-items: center;
