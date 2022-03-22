@@ -1,94 +1,81 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+html {
+  height: 100%;
+}
 
 body {
-  background: linear-gradient(90deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255)) ;
-  font-family:"Comic Sans MS",serif;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #3a3a3a;
 }
 
-.login {
-  width: 400px;
-  margin: 16px auto;
-  font-size: 16px;
+#main-holder {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
 }
 
-/* Reset top and bottom margins from certain elements */
-.login-header,
-.login p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.sub-login {
-    background:linear-gradient(90deg, black , #28d, black);
-  padding: 20px;
-  color: #fff; 
-}
-/* The triangle form is achieved by a CSS hack */
-
-
-.login-header {
-  background:linear-gradient(90deg, black , #28d, black);
-  padding: 20px;
-  font-size: 1.4em;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  margin-top: 100px;
-  margin-bottom: 0px;
-}
-
-.login-container {
-  background: #ebebeb;
-  padding: 12px;
-  margin-top: 0px;
-}
-
-/* Every row inside .login-container is defined with p tags */
-.login p {
-  padding: 12px;
-}
-
-.login input {
-  box-sizing: border-box;
-  display: block;
+#login-error-msg-holder {
   width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  padding: 16px;
-  outline: 0;
-  font-family: inherit;
-  font-size: 0.95em;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
-.login input[type="email"],
-.login input[type="password"] {
-  background: #fff;
-  border-color: #bbb;
-  color: #555;
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
 }
 
-/* Text fields' focus effect */
-.login input[type="email"]:focus,
-.login input[type="password"]:focus {
-  border-color: #888;
+#error-msg-second-line {
+  display: block;
 }
 
-.login input[type="submit"] {
-  background:linear-gradient(90deg, black , #28d, black) ;
-  border-color: transparent;
-  color: #fff;
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
   cursor: pointer;
-}
-
-.login input[type="submit"]:hover {
-  animation-name: background-color;
-  animation-duration: 0,1s;
-  animation-fill-mode: forwards;
-}
-  @keyframes background-color {
-    100% {
-      background:linear-gradient(90deg, #28d , black, #28d);
-    }
-/* Buttons' focus effect */
-
+  outline: none;
 }
