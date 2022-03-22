@@ -8,7 +8,7 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
 
     if (useremail === "user@ejemplo.com" && password === "password") {
-        alert("You have successfully logged in.");
+        alert("Bienvenido " + useremail + ".");
         window.location.href="http://www.google.com";
     } else {
         loginErrorMsg.style.opacity = 1;

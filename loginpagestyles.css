@@ -14,7 +14,7 @@ body {
 
 #main-holder {
   width: 55%;
-  height: 80%;
+  height: 95%;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -79,6 +79,7 @@ body {
   cursor: pointer;
   outline: none;
   transition-duration: 0.7s;
+  box-shadow:-1px 2px 5px 5px #635f5fde;
 }
 #login-form-submit:hover{
   background-color: rgb(84, 109, 163);
