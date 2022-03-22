@@ -9,7 +9,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #3a3a3a;
+  background: linear-gradient(90deg, #FFFFFF, #6282F9, #0f3b84);
 }
 
 #main-holder {
@@ -18,7 +18,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: white;
+  background-color: white ;
   border-radius: 7px;
   box-shadow: 0px 0px 5px 2px black;
 }
