@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="loginpagestyles.css">
-  <script src="https://kit.fontawesome.com/174974c2b6.js" crossorigin="anonymous"></script>
-  <script defer src="loginpages1func.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorios Catedral</title>
+    <link rel="stylesheet" href="loginpagestyles.css">
+    <script defer src="loginpages1func.js"></script>
 </head>
-
 <body>
-  <main id="main-holder">
-   <h1><img id="login-imagen" src="/logos/logocatedral.png"></h1>
-    <h1 id="login-header"> Laboratorios Catedral</h1>
-    
-    <div id="login-error-msg-holder">
-      <p id="login-error-msg">Correo y/o <span id="error-msg-second-line"> Contraseña incorrecta</span></p>
-    </div>
-    
-    <form id="login-form">
-      <input type="email" name="useremail" id="useremail-field" class="login-form-field" placeholder="Correo">
-      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Contraseña">
-     <button type="button"  id="login-form-submit"><i class="fa-solid fa-arrow-right-to-bracket"></i> Inicio</button>
+    <form id="login__form">
+        
+        <h2><img src="./logos/logocatedral.png" alt=""><p>Laboratorios Catedral</p></h2>
+        <input type="email" name="useremail" id="from__user" placeholder="&#9993 Correo">
+        <input type="password" name="userpassword" id="form__pass" placeholder="&#128272 Contraseña">
+        <input type="submit" id="form__btn" value="&#129094 Ingresar">
     </form>
-  
-  </main>
-</body>
+    
 
+</body>
 </html>

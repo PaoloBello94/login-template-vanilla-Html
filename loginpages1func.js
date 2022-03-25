@@ -1,16 +1,14 @@
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
-
+const loginForm = document.getElementById("login__form");
+const loginButton = document.getElementById("form__btn");
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const useremail = loginForm.useremail.value;
-    const password = loginForm.password.value;
+    const password = loginForm.userpassword.value;
 
     if (useremail === "user@ejemplo.com" && password === "password") {
         alert("Bienvenido " + useremail + ".");
         window.location.href="http://www.google.com";
     } else {
-        loginErrorMsg.style.opacity = 1;
+        alert(" Coreo y/o Contraseña incorrectas");
     }
 })
