@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Laboratorios Catedra menu lateral</title>
+    <link rel="stylesheet" href="./menustykes.css">
+    <script src="https://kit.fontawesome.com/174974c2b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Se encuentra el menu superior general/logout y el boton desplegable -->
+    <header>
+        <div class="contenedor">
+        <label><i class="fa-solid fa-bars" id="btnMenu" ></i><img src="./logo/logocatedral.png"> Laboratorios Catedral</label>
+        <h2><i class="fa-solid fa-right-from-bracket" id="btnSalir" >Salir</i></h2>
+        </div>
+    </header>
+    <!-- Se encuentra la barra lateral de navegacion, se debe de editar respecto a los 
+    elementos que se quieran utilizar-->
+    <div class="menu" id="menu">
+        <a href="">Algo1</a>
+        <button class="dropdown-btn">Administracion 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="">Administradores</a>
+          <a href="">Clientes</a>
+        </div>
+        <button class="dropdown-btn">Administracion 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="">Administradores</a>
+            <a href="">Clientes</a>
+          </div>
+        <a href="">Algo2</a>
+    </div>
+         <!--    <nav class="menu-nav">
+                <ul class="menu" id="menu">
+                    <li class="administracion submenu"id="administracion">Administracion <i class="fa-solid fa-angle-down"></i></li>
+                        <ul class="submenu" id="submenu">
+                        <li id="administradores">Administradores</li>
+                        <li id="clientes">Clientes</li>
+                    </ul>
+                </ul>
+            </nav>
+        -->
+    
+        <article>Article</article>
+    <script src="./menu.js"></script>
+</body>
+</html>

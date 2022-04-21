@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*comenzamos con los itms de la barra de navegacion*/
+header { 
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: 0;
+    position: relative;
+    z-index: 10;
+    background:linear-gradient(270deg, #0f3b84, #6282F9, #0f3b84);
+}
+/*Se muestran los contenedores dentro del header*/
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    color: antiquewhite;
+}
+
+/*en el label se encuentran el boton de menu, el logo de Catedral
+y el tenxto*/
+.contenedor label{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+/*en el h2 se encuentra el boton de salir y el texto salir*/   
+}
+.contentenedor h2 {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    text-align: right;
+    top: 18px;
+    width: 100%;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+/*posiciona y hace tactil la imagen btn de menu*/
+#btnMenu {
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;    
+}
+/*posiciona y hace tactil la imagen btn de menu*/
+#btnSalir {
+    margin-top: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+/*posiciona el logo de catedral*/
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(121, 121, 121);
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+}
+/*contiene el panel desplegable*/
+.menu {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(7, 57, 70, 1);
+    margin-left: -100%;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+.mostrar{
+    margin-left: 0;
+}
+.menu a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: beige;
+}
+
+.menu a:hover, .dropdown-btn:hover {
+    background: rgba(0,0,0,0.2);
+}
+.active {
+    background-color: green;
+    color: white;
+}
+.dropdown-container {
+    display: none;
+    background-color: rgb(5, 39, 48);
+    padding-left: 8px;
+}
+article {
+        display: none ;
+        text-align: center;
+    }
+    /*
+.menu {
+    position: fixed;
+    width: auto;
+    height: 100vh;
+    margin-left: -100%;
+    color: beige;
+    background: rgba(7, 57, 70, 1);
+    /*padding: 10px 15px;
+    transition: all 300ms;
+}
+
+.mostrar{
+    margin-left: 0;
+}
+.menu ul {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    color: beige;
+    left: 10px;
+    top: 10px;
+}
+.menu li {
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 300ms;
+    border-radius: 3px;
+    display: block;
+    font-size: 15px;
+    color: beige;
+    width: 200px;
+}
+.menu li:hover {
+    background: rgba(0,0,0,0.2);
+}
+*/
